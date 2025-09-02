@@ -69,4 +69,6 @@
 ## 🚀 Deployment & Demo
 
 * **Live Demo:** [🔗 EASYCODE REVISION APP ](https://dev-dive-academy.lovable.app)
+https://github.com/ArchAtitocodes/SDG4.3.2_HACKATHON2.git
 
+* **Live pitch deck:** [🔗 EASYCODE REVISION APP ](https://www.canva.com/design/DAGx1c8q0vU/r5LwWDRMi3UdbcW8jVKF3w/edit?utm_content=DAGx1c8q0vU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
