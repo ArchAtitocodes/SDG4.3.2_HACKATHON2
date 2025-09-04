@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* EASYCODE REVISION - SDG 4.3.2 FUTURISTIC DESIGN SYSTEM */
+
+@layer base {
+  :root {
+    /* Futuristic Color Palette */
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+    
+    /* Electric Blue Primary */
+    --primary: 199 89% 48%;
+    --primary-foreground: 224 71% 4%;
+    --primary-glow: 199 89% 65%;
+    
+    /* Silver Accents */
+    --secondary: 220 14% 76%;
+    --secondary-foreground: 224 71% 4%;
+    --silver: 0 0% 75%;
+    --silver-bright: 0 0% 90%;
+    
+    /* Neural Network Theme */
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+    --card-glass: 224 71% 4% / 0.8;
+    
+    --popover: 224 71% 4%;
+    --popover-foreground: 213 31% 91%;
+    
+    /* Interactive Elements */
+    --muted: 215 32% 17%;
+    --muted-foreground: 217 32% 53%;
+    
+    --accent: 199 89% 48%;
+    --accent-foreground: 224 71% 4%;
+    
+    /* Status Colors */
+    --success: 142 76% 36%;
+    --success-foreground: 355 7% 97%;
+    --warning: 48 96% 53%;
+    --warning-foreground: 224 71% 4%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 98%;
+    
+    /* UI Elements */
+    --border: 215 32% 17%;
+    --input: 215 32% 17%;
+    --ring: 199 89% 48%;
+    
+    --radius: 0.75rem;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(199 89% 48%), hsl(199 89% 65%));
+    --gradient-neural: linear-gradient(45deg, hsl(199 89% 48% / 0.1), hsl(220 14% 76% / 0.1));
+    --gradient-glow: radial-gradient(circle at center, hsl(199 89% 48% / 0.3), transparent 70%);
+    
+    /* Shadows & Effects */
+    --shadow-glow: 0 0 30px hsl(199 89% 48% / 0.3);
+    --shadow-neural: 0 4px 20px hsl(224 71% 4% / 0.4);
+    --shadow-glass: inset 0 1px 0 hsl(213 31% 91% / 0.1);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-roboto;
+    background-image: url('/src/assets/code-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+}
+
+@layer components {
+  /* Neural Network Background Effects */
+  .neural-bg {
+    background: 
+      radial-gradient(circle at 20% 50%, hsl(var(--primary) / 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(var(--primary-glow) / 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, hsl(var(--silver) / 0.05) 0%, transparent 50%);
+  }
+  
+  /* Glassmorphism Card */
+  .glass-card {
+    background: hsl(var(--card-glass));
+    backdrop-filter: blur(16px);
+    border: 1px solid hsl(var(--border));
+    box-shadow: var(--shadow-glass), var(--shadow-neural);
+  }
+  
+  /* Glowing Button */
+  .glow-button {
+    background: var(--gradient-primary);
+    box-shadow: var(--shadow-glow);
+    transition: var(--transition-smooth);
+  }
+  
+  .glow-button:hover {
+    box-shadow: 0 0 40px hsl(var(--primary) / 0.5);
+    transform: translateY(-2px);
+  }
+  
+  /* Neural Network Lines Animation */
+  .neural-lines::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      linear-gradient(45deg, transparent 48%, hsl(var(--primary) / 0.1) 49%, hsl(var(--primary) / 0.1) 51%, transparent 52%),
+      linear-gradient(-45deg, transparent 48%, hsl(var(--primary-glow) / 0.1) 49%, hsl(var(--primary-glow) / 0.1) 51%, transparent 52%);
+    background-size: 30px 30px;
+    animation: neural-flow 20s linear infinite;
+    pointer-events: none;
+  }
+  
+  /* Celebration Confetti */
+  .celebration-confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+  }
+}
+
+@layer utilities {
+  /* Custom Animation Classes */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-shimmer {
+    background: linear-gradient(-45deg, transparent 30%, hsl(var(--primary) / 0.5) 50%, transparent 70%);
+    background-size: 200% 200%;
+    animation: shimmer 3s ease-in-out infinite;
+  }
+  
+  .text-gradient {
+    background: var(--gradient-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* Custom Keyframes */
+@keyframes neural-flow {
+  0% { transform: translateX(0) translateY(0); }
+  100% { transform: translateX(30px) translateY(30px); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}

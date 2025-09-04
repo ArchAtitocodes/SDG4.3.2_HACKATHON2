@@ -1,5 +1,5 @@
-
-**Canva Prompt (4000 Words)**
+kindly change the whole pitch deck to fit the prompt below:
+**GAMMA Prompt (4000 Words)**
 Generate a professional, investor-focused pitch deck with a clean, minimal, corporate design that balances modern aesthetics with subtle futuristic tech elements. Use a consistent layout across slides, predominantly white backgrounds with accents of deep blue, teal, and gradient highlights to symbolize innovation, trust, and education. Typography should use **Montserrat for headings** and **Roboto for body text**, ensuring readability and elegance. Icons should be simple, vector-style, and business-oriented. Avoid overly playful graphics; instead, use clean illustrations, light futuristic accents, and data-driven visuals. Incorporate occasional futuristic code-inspired patterns in the background, but keep the overall style professional. Each slide should feature clear titles, well-structured content blocks, and visual balance. Now structure the pitch deck as follows, elaborating all content to fit a professional investor narrative.
 
 **Slide 1: Title Slide**
@@ -267,6 +267,6 @@ Investor appeal: Concludes with confidence and clear investment opportunity.
 
 ---
 
-**Final Note for Canva AI**: Ensure consistency in slide transitions, maintain corporate and professional tone, emphasize clarity, and avoid clutter. Use modern vector icons, clean typography, data-driven charts, and subtle futuristic accents. Ensure the entire deck feels polished, investor-ready, and aligned with both business and SDG values.
+**Final Note for GAMMA AI**: Ensure consistency in slide transitions, maintain corporate and professional tone, emphasize clarity, and avoid clutter. Use modern vector icons, clean typography, data-driven charts, and subtle futuristic accents. Ensure the entire deck feels polished, investor-ready, and aligned with both business and SDG values.
 
 
